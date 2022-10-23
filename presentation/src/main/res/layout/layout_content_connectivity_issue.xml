@@ -29,7 +29,7 @@
         android:text="@string/title_connectivity_issue"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/black"
+        android:textColor="?attr/colorOnBackground"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/tv_description"
         app:layout_constraintTop_toBottomOf="@id/view_animation" />
@@ -43,7 +43,7 @@
         android:text="@string/description_connectivity_issue"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title" />
 

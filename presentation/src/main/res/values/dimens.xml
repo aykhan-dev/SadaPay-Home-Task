@@ -10,4 +10,8 @@
     <dimen name="half_margin">8dp</dimen>
 
     <dimen name="shape_corner_small">5dp</dimen>
+
+    <dimen name="width_line">1dp</dimen>
+    <dimen name="size_placeholder_image">38dp</dimen>
+    <dimen name="size_trending_repo_image">48dp</dimen>
 </resources>

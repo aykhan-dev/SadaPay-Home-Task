@@ -2,4 +2,7 @@
     <string name="title_connectivity_issue">Something went wrong..</string>
     <string name="description_connectivity_issue">An alien is probably blocking your signal.</string>
     <string name="btn_retry">Retry</string>
+
+    <string name="label_trending">Trending</string>
+    <string name="label_about_app">About app</string>
 </resources>

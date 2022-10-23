@@ -60,4 +60,10 @@ dependencies {
     def lottieVersion = '3.4.0'
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
+    // Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    // Swipe to refresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
 }

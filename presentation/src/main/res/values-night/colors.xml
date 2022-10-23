@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF212121</color>
+    <color name="primaryDark">#FF000000</color>
+    <color name="primaryLight">#FF484848</color>
+
+    <color name="onPrimary">#FFFFFFFF</color>
+</resources>

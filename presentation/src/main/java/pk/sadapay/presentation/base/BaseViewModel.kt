@@ -7,6 +7,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
+import timber.log.Timber
 import kotlin.coroutines.CoroutineContext
 
 /*
@@ -31,7 +32,7 @@ abstract class BaseViewModel<State, Effect, Event> : ViewModel() {
     open fun onEvent(event: Event) {}
 
     open fun onError(context: CoroutineContext, throwable: Throwable) {
-
+        Timber.e(throwable)
     }
 
     protected fun emitState(state: State) {

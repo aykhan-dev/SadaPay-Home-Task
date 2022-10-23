@@ -6,14 +6,20 @@
     tools:context=".fragment.trending_repos.TrendingReposFragment">
 
     <include
-        android:id="@+id/layout_connectivity_issue"
-        layout="@layout/layout_content_connectivity_issue"
+        android:id="@+id/layout_shimmer"
+        layout="@layout/layout_content_trending_repos_shimmer"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <include
         android:id="@+id/layout_trending_repos"
         layout="@layout/layout_content_trending_repos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/layout_connectivity_issue"
+        layout="@layout/layout_content_connectivity_issue"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

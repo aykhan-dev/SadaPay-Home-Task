@@ -19,6 +19,7 @@ class App : Application() {
             properties(
                 mapOf(
                     "isDebug" to BuildConfig.DEBUG.toString(),
+                    "baseUrl" to "https://api.github.com/",
                 )
             )
             modules(appComponent)

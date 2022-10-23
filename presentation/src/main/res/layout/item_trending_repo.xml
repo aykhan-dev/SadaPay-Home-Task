@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/single_pad">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="@dimen/size_trending_repo_image"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/single_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_profile"
+        app:layout_constraintTop_toTopOf="@id/iv_profile"
+        tools:text="ternaus" />
+
+    <TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="@id/tv_profile_name"
+        app:layout_constraintStart_toStartOf="@id/tv_profile_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_name"
+        tools:text="retinaface" />
+
+    <TextView
+        android:id="@+id/tv_repo_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/half_margin"
+        android:ellipsize="marquee"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@id/tv_profile_name"
+        app:layout_constraintStart_toStartOf="@id/tv_profile_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_name"
+        tools:text="The remake of https://github.com/blubug6/Pytorch_Retinaface" />
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/single_margin"
+        android:drawablePadding="@dimen/half_pad"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:drawableStartCompat="@drawable/ic_circle_24"
+        app:drawableTint="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="@id/tv_star"
+        app:layout_constraintEnd_toStartOf="@id/tv_star"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/tv_repo_description"
+        app:layout_constraintTop_toTopOf="@id/tv_star"
+        tools:text="Python" />
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/single_margin"
+        android:drawablePadding="@dimen/half_pad"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:drawableStartCompat="@drawable/baseline_grade_20"
+        app:drawableTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@id/tv_repo_description"
+        app:layout_constraintStart_toEndOf="@id/tv_language"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
+        tools:text="153" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_repo_description, tv_language, tv_star"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
